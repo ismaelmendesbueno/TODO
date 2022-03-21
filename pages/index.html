@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>TODO-APP</title>
+</head>
+
+<body>
+    <main class="main">
+        <div class="modal">
+            <input type="text" placeholder="Edit your todo">
+            <p>Press <span>ENTER</span> key to send</p>
+        </div>
+        <div class="container">
+            <div class="todo">
+                <div class="todo-content">
+                    <h1>TODO</h1>
+                </div>
+
+                <div class="img">
+                    <img src="/images/icon-sun.svg" alt="">
+                </div>
+
+            </div>
+
+            <div class="input">
+                <div class="borderInput"></div>
+                <input type="text" placeholder="Create a new todo..." id="search">
+            </div>
+
+        </div>
+
+        
+        <div class="tasks" id="tasks">
+            <div class="taskBoxDiv" id="taskBoxDiv">
+              
+            </div>
+
+            <div class="footer">
+                <div class="itemsLeft">
+                    <p>Items left</p>
+                </div>
+
+                <div class="AllActiveComplete">
+                    <p>All</p>
+                    <p>Active</p>
+                    <p>Complete</p>
+                </div>
+
+                <div>
+                    <p>Clear Completed</p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="last">
+            <p>Developed by <span>Ismael mendes bueno</span></p>
+        </footer>
+
+       
+    </main>
+    <script src="/scripts/addTask.js"></script>
+    <script src="/scripts/dbCliente.js"></script>
+    <script src="/scripts/modal.js"></script>
+    <script src="/scripts/complete.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    background-color: hsl(235, 21%, 11%);
+    height: 100vh;
+}
+
+.main {
+    width: 100%;
+}
+
+.container {
+    background-image: url(/images/bg-desktop-dark.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 100%;
+    height: 35vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.todo {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+
+.todo-content h1 {
+    color: white;
+}
+
+.input  {
+    display: flex;
+    align-items: center;
+
+    width: 40%;
+
+    height: 40px;
+
+    border-radius: 5px;
+    background-color: hsl(235, 24%, 19%);
+}
+
+
+.input input[type="text"] {
+    width: 100%;
+    height: 40px;
+
+    background-color: hsl(235, 24%, 19%);
+
+    border: none;
+
+    padding-left: 40px;
+    color: white;
+}
+
+.borderInput {
+    position: absolute;
+
+    margin-left: 10px;
+
+    width: 20px;
+    height: 20px;
+
+    border-radius: 15px;
+    border: 1.3px solid hsl(237, 14%, 26%);;
+
+    z-index: 1;
+
+    cursor: pointer;
+
+   
+}
+
+
+.tasks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    position: absolute;
+
+    
+    width: 100%;
+    margin: 0 auto;
+    top: 190px;
+
+    
+}
+
+.taskBoxDiv {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.border {
+    width: 20px;
+    height: 20px;
+
+    border-radius: 15px;
+    border: 1.3px solid hsl(237, 14%, 26%);;
+
+    z-index: 1;
+
+    cursor: pointer;
+
+    margin-left: 10px;
+}
+
+
+
+.taskBox {
+    display: flex;
+    align-items: center;
+
+    text-align: center;
+
+    width: 40%;
+    height: 40px;
+
+    background-color: hsl(235, 24%, 19%);
+
+    border-bottom: 1px solid hsl(237, 14%, 26%);
+
+}
+
+.taskBox p {
+    color: hsl(234, 39%, 85%);
+
+    margin-left: 15px;
+
+    font-size: 15px;
+
+    font-weight: 400;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    text-align: center;
+
+    width: 40%;
+    height: 40px;
+
+    background-color: hsl(235, 24%, 19%);
+
+    color: hsl(237, 14%, 26%);
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.footer p {
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.AllActiveComplete {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 40%;
+
+}
+
+.last {
+   position: absolute;
+   bottom: 0;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   width: 100%;
+
+   margin-bottom: 15px;
+}
+
+.last p {
+    font-size: 15px;
+    color: hsl(237, 14%, 26%);
+}
+
+
+
+
+/* HOVER */
+
+.img img {
+    cursor: pointer;
+}
+
+
+
+/* MODAL */
+
+
+.modal {
+    width: 100%;
+    height: 100vh;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    background: rgba(0,0,0,0.8);
+    opacity: 1;
+
+
+    position: absolute;
+
+    z-index: 9999;
+
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal input[type="text"] {
+    width:  40%;
+    height: 50px;
+    background-color: hsl(235, 24%, 19%);
+    border: none;
+    color: white;
+
+    padding-left: 20px;
+}
+
+.modal input[type="text"]::placeholder {
+    padding-left: 5px;
+}
+
+.modal p {
+    color: white;
+
+    margin-top: 15px;
+
+    font-weight: 700;
+}
+
+.modal span {
+    color: hsl(235, 24%, 19%);
+}
+
